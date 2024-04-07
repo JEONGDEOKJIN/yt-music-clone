@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 body {
   /* sideBar에서 w-full 설정 이후 : <div className='flex flex-row h-full'> */
   height  : 100vh;
