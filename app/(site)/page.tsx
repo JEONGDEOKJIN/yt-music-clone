@@ -13,7 +13,15 @@ const page = async () => {
 
 
   return (
-    <div className='text-blue-800  cursor-pointer hover:bg-yellow-100'>main page</div>
+    <div className='min-h-[600px]'>main page
+    
+    <div className='h-[500px] bg-neutral-500'>homepage</div>
+    <div className='h-[500px] bg-neutral-500'>homepage</div>
+    <div className='h-[500px] bg-neutral-500'>homepage</div>
+    <div className='h-[500px] bg-neutral-500'>homepage</div>
+    <div className='h-[500px] bg-neutral-500'>homepage</div>
+    
+    </div>
   )
 }
 

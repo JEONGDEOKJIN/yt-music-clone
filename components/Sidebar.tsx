@@ -15,7 +15,7 @@ const Sidebar:React.FC<SidebarProps>  = ({children} )  => {
     {/* ⭐⭐h-full 이후 -  global.css > body 에 height 를 100vh 를 줘서 꽉 차게 함  */}
       <div className='flex flex-row h-full  '>
         {/* sidebar */}
-          <nav className='w-[240px] border-r-[1px] border-neutral-600'>
+          <nav className='hidden lg:block  w-[240px] border-r-[1px] border-neutral-600'>
             <div className='p-[24px]'> 
               <Logo />              
             </div>
