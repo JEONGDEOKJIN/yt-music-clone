@@ -23,9 +23,8 @@ const page = async () => {
       <div className="min-h-[600px]">
         <div className="mt-9"></div>
         <Category />
-        <div className="mt-12"></div>
 
-        {/* carousel */}
+        <div className="mt-20"></div>
         <PlayListCarousel
           playlistArray={[...dummyPlayListArray1]}
           Thumbnail={

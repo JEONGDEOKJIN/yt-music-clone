@@ -1,15 +1,14 @@
-import React from 'react'
+import Header from "@/components/Header";
+import React from "react";
 
-const layout = ({children} : any) => {
+const layout = ({ children }: {children : React.ReactNode}) => {
   return (
     <>
-    <div> layout 이 먼저들어온다. </div>
-
-    <div>page.tsx : {children} </div>
-    
+      <div className="w-full h-full">
+        <Header> {children} </Header>
+      </div>
     </>
+  );
+};
 
-  )
-}
-
-export default layout
+export default layout;

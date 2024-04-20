@@ -1,4 +1,4 @@
-import { Playlist } from "@/types";
+import { TopSong } from "@/types";
 import React from "react";
 
 import {
@@ -10,18 +10,18 @@ import {
 } from "@/components/ui/carousel";
 import PlayListCard from "./PlayListCard";
 
-interface PlayListCarouselProps {
+interface SongListCarouselProps {
   title: string;
   subTitle?: string;
   Thumbnail?: React.ReactNode;
-  playlistArray: Playlist[];
+  songListTop10: TopSong[];
 }
 
-const PlayListCarousel: React.FC<PlayListCarouselProps> = ({
+const SongListCarousel: React.FC<SongListCarouselProps> = ({
   title,
   subTitle,
   Thumbnail,
-  playlistArray,
+  songListTop10,
 }) => {
   return (
     <div className="w-full">
@@ -48,7 +48,7 @@ const PlayListCarousel: React.FC<PlayListCarouselProps> = ({
         </div>
 
         <CarouselContent>
-          {playlistArray?.map((playlist, index) => {
+          {songListTop10?.map((playlist, index) => {
             return (
               <CarouselItem
                 key={index}
@@ -65,4 +65,4 @@ const PlayListCarousel: React.FC<PlayListCarouselProps> = ({
   );
 };
 
-export default PlayListCarousel;
+export default SongListCarousel;
