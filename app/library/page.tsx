@@ -1,9 +1,15 @@
-import React from 'react'
+import PagePadding from "@/components/PagePadding";
+import React from "react";
+import Category from "./components/Category";
 
 const page = () => {
   return (
-    <div>library page</div>
-  )
-}
+    <>
+      <PagePadding>
+        <Category />
+      </PagePadding>
+    </>
+  );
+};
 
-export default page
+export default page;

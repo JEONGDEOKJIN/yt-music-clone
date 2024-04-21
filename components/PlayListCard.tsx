@@ -22,8 +22,8 @@ const PlayListCard = ({ playlist }: any) => {
   };
 
   const onClickPlay = () => {
-    // play 될 수 있게 해야 함 | todo 로 남기기 
-  }
+    // play 될 수 있게 해야 함 | todo 로 남기기
+  };
 
   return (
     <article className="h-[240px] cursor-pointer group">
