@@ -48,6 +48,7 @@ const Header = ({ children }) => {
   const headRef = useRef();
 
   useEffect(() => {
+    const currentHeadRef = headRef.current
     const handleScroll = () => {
       const scrollValue = headRef?.current?.scrollTop;
       console.log("scroll value :", scrollValue);
@@ -58,11 +59,11 @@ const Header = ({ children }) => {
       */
     };
 
-    headRef?.current?.addEventListener("scroll", handleScroll);
+    currentHeadRef?.addEventListener("scroll", handleScroll);
 
     // 클린업
     return () => {
-      headRef?.current?.removeEventListener("scroll", handleScroll);
+      currentHeadRef?.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
