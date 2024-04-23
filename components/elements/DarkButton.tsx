@@ -3,7 +3,7 @@
 import { cn } from '@/lib/utils';
 import React from 'react'
 
-const DarkButton = ({ icon, label, className, ...props }: any) => {
+const DarkButton = ({ icon = null, label, className, ...props }: any) => {
   return (
     <div
       className={cn(

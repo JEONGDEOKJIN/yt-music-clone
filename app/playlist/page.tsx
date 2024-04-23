@@ -26,7 +26,10 @@ const page = async (props: PlaylistPageProps) => {
   return (
     <>
       {/* // imageSrc 를 바탕으로, 이미지를 바꿔주는 컴포넌트 만들기 */}
+      
+      {/* 이걸 지금, playlist 페이지에서 그대로 가져가서 재사용 함⭐⭐ */}
       <HeaderBgChager imageSrc={imageSrc} />
+
       <div className="mt-12"></div>
       <PlayListHead playlist={playlist} />
       <div>playlist page : {props.searchParams.list}</div>
