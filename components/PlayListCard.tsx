@@ -22,7 +22,7 @@ const PlayListCard = ({ playlist }: any) => {
   };
 
   const onClickPlay = () => {
-    // play 될 수 있게 해야 함 | todo 로 남기기 | ⭐ 복습 준비
+    // play 될 수 있게 해야 함 | todo 로 남기기 | ⭐ 복습 준비 | 추가 학습 필요 
   };
 
   return (
